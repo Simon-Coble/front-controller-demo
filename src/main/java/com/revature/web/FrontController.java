@@ -6,8 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.revature.util.RequestHelper;
-
 /**
  * Servlet implementation class FrontController
  */
@@ -23,6 +21,7 @@ public class FrontController extends HttpServlet {
 			RequestHelper.processLogin(request, response);
 			break;
 		case "employees":
+			RequestHelper.processEmployees(request, response);
 			break;
 		}
 	}
